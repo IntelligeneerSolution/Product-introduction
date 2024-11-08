@@ -9,18 +9,28 @@
 </head>
 <body>
 <header class="header">
-    <img src="images/logo.jpg" alt="Intelligeneer Solution Logo" class="logo">
-    <nav>
-        <button id="lang-en" class="lang-switch">EN</button>
-        <button id="lang-zh" class="lang-switch">中文</button>
-    </nav>
+    <img src="images/logo.jpg" alt="Intelligeneer Solution Logo" class="logo"
+         onclick="window.location.href='https://www.intelligeneer.com/'">
+    <h2 class="header-title">Intelligeneer Solution Handbook</h2>
 </header>
 <main>
-    <section id="about">
-        <h1 data-i18n="title"></h1>
-        <p data-i18n="description">We provide the most innovative solutions to meet our customers' needs.</p>
+    <nav class="index-navbar">
+        <button class="lang-switch" onclick="window.location.href='pages/English.html'">EN</button>
+        <button class="lang-switch" onclick="window.location.href='pages/Chinese.html'">中文</button>
+        <button class="lang-switch" onclick="checkPassword()">Internal</button>
+    </nav>
+    <section class="map-section">
+        <h2>Our Company Location</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3535.8645616873805!2d153.0
+        3476507584782!3d-27.597728322174234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b91459fecc
+        b4591%3A0x389aa50eb89b2402!2su5%2F35%20Learoyd%20Rd%2C%20Acacia%20Ridge%20QLD%204110!5e0!3m2!1szh-CN
+        !2sau!4v1730956645564!5m2!1szh-CN!2sau"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+
     </section>
 </main>
+
 <footer>
     <p>&copy; 2024 Intelligeneer Solution</p>
 </footer>

@@ -6,25 +6,65 @@ body {
     padding: 0;
 }
 
+/* 头部样式 */
 .header {
-    background-color: #D4AF37;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    text-align: center; /* 使头部内容水平居中 */
+    background-color: #ffdd55; /* 金黄色背景 */
+    padding: 20px 0; /* 上下边距，让内容不显得拥挤 */
+    position: relative;
 }
 
+/* logo 样式 */
 .logo {
     height: 60px;
+    position: absolute;
+    left: 20px; /* 保持 logo 靠左 */
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer; /* 鼠标悬停时显示为手形 */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* 添加过渡效果 */
+}
+
+.logo:hover {
+    transform: translateY(-50%) scale(1.1); /* 鼠标悬停时略微放大图片 */
+    opacity: 0.8; /* 鼠标悬停时使图片略微透明 */
+}
+
+/* 标题样式 */
+.header-title {
+    color: #011E41; /* 使用深蓝色字体，与公司的整体风格一致 */
+    font-size: 2.5em; /* 标题字体大小 */
+    font-weight: bold; /* 粗体 */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* 添加轻微的阴影，增加立体效果 */
+    margin: 0; /* 去除默认外边距 */
+    font-family: 'Georgia', serif; /* 使用衬线字体使标题更有艺术感 */
+}
+
+.index-navbar{
+    display: flex;
+    justify-content: center; /* 居中对齐 */
+    align-items: center;     /* 使按钮垂直居中 */
+    margin-top: 20px;        /* 设置顶部外边距 */
 }
 
 .lang-switch {
-    background-color: #011E41;
-    color: #FFFFFF;
+    background-color: #ffdd55; /* 更改为金黄色 */
+    color: #000000;
     border: none;
     padding: 10px;
     cursor: pointer;
     margin-left: 10px;
+    font-size: large;
+    width: 100px;
+    height: 50px;
+    box-sizing: border-box;
+    border-radius: 5px; /* 添加圆角使按钮更美观 */
+    transition: background-color 0.3s ease; /* 添加颜色过渡效果 */
+}
+
+/* 鼠标悬停时的效果 */
+.lang-switch:hover {
+    background-color: #F0C674; /* 悬停时稍微变亮，给用户视觉反馈 */
 }
 
 main {
