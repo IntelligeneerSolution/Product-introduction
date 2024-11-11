@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Intelligeneer Solution - Pospal Page</title>
+  <!-- 引入公共样式 -->
+  <link rel="stylesheet" href="../../style/index.css">
+  <!-- 引入页面特定样式 -->
+  <link rel="stylesheet" href="../../style/Pospal.css">
+  <!-- 引入 JavaScript 文件 -->
+  <script src="../../scripts/index.js" defer></script>
+</head>
+<body>
+<header class="header">
+  <img src="../../images/logo.jpg" alt="Intelligeneer Solution Logo" class="logo" onclick="window.location.href='https://www.intelligeneer.com/'">
+  <h2 class="header-title">Intelligeneer Pospal Page</h2>
+</header>
+
+<nav class="index-navbar">
+  <button class="lang-switch" onclick="window.location.href='../../index.html'">Home</button>
+  <button class="lang-switch" onclick="window.location.href='../English.html'">EN</button>
+  <button class="lang-switch" onclick="window.location.href='Pospal_cn.html'">中文</button>
+  <button class="lang-switch" onclick="checkPassword()">Internal</button>
+</nav>
+
+<main>
+  <section class="content-list">
+    <h1>Intelligeneer BUG BS 🤔</h1>
+    <ul class="content-items">
+      <li>
+        <span class="tag">FEATURED</span>
+        <h2>Public Holiday Surcharge Settings</h2>
+        <p>Mar 18, 2024</p>
+      </li>
+      <li>
+        <span class="tag">FEATURED</span>
+        <h2>Modify Product Price at POS (Text Version)</h2>
+        <p>Apr 26, 2024</p>
+      </li>
+      <li>
+        <span class="tag">FEATURED</span>
+        <h2>How to Connect Adapay Card Reader with Pospal System</h2>
+        <p>Mar 18, 2024</p>
+      </li>
+      <li>
+        <span class="tag">FEATURED</span>
+        <h2>Troubleshooting Printer Not Printing</h2>
+        <p>Mar 18, 2024</p>
+      </li>
+      <li>
+        <span class="tag">FEATURED</span>
+        <h2>Login to POS System with Mobile Hotspot Without Internet Connection</h2>
+        <p>Mar 18, 2024</p>
+      </li>
+      <li>
+        <h2>1 POS Training - Android Version</h2>
+        <p>Mar 13, 2024</p>
+      </li>
+      <li>
+        <h2>2 POS Training - Membership Feature</h2>
+        <p>Mar 13, 2024</p>
+      </li>
+      <li>
+        <h2>3 AdaPay EFTPOS</h2>
+        <p>Mar 13, 2024</p>
+      </li>
+      <li>
+        <h2>4 Back Office Training - Chinese</h2>
+        <p>Mar 11, 2024</p>
+      </li>
+      <li>
+        <h2>Bind Printer to POS Main Terminal</h2>
+        <p>Mar 10, 2024</p>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Pagination Button -->
+  <div class="pagination">
+    <button class="next-page-btn" onclick="nextPage()">Next Page &rarr;</button>
+  </div>
+</main>
+
+<footer>
+  <p>&copy; 2024 Intelligeneer BUG BS 🤔 | Powered by Hugo | Theme: Paper</p>
+</footer>
+</body>
+</html>

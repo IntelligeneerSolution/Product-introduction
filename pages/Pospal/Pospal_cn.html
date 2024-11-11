@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Intelligeneer Solution - Pospal Page</title>
+  <!-- 引入公共样式 -->
+  <link rel="stylesheet" href="../../style/index.css">
+  <!-- 引入页面特定样式 -->
+  <link rel="stylesheet" href="../../style/Pospal.css">
+  <!-- 引入 JavaScript 文件 -->
+  <script src="../../scripts/index.js" defer></script>
+</head>
+<body>
+<header class="header">
+  <img src="../../images/logo.jpg" alt="Intelligeneer Solution Logo" class="logo" onclick="window.location.href='https://www.intelligeneer.com/'">
+  <h2 class="header-title">Intelligeneer Pospal Page</h2>
+</header>
+
+<nav class="index-navbar">
+  <button class="lang-switch" onclick="window.location.href='../../index.html'">Home</button>
+  <button class="lang-switch" onclick="window.location.href='Pospal_en.html'">EN</button>
+  <button class="lang-switch" onclick="window.location.href='../Chinese.html'">中文</button>
+  <button class="lang-switch" onclick="checkPassword()">Internal</button>
+</nav>
+
+<main>
+  <section class="content-list">
+    <h1>Intelligeneer BUG BS 🤔</h1>
+    <ul class="content-items">
+      <li>
+        <span class="tag">FEATURED</span>
+        <h2>公共假期手续费设置</h2>
+        <p>Mar 18, 2024</p>
+      </li>
+      <li>
+        <span class="tag">FEATURED</span>
+        <h2>在收银端修改商品价格 (文字版)</h2>
+        <p>Apr 26, 2024</p>
+      </li>
+      <li>
+        <span class="tag">FEATURED</span>
+        <h2>Adapay刷卡机如何与银豹系统连接</h2>
+        <p>Mar 18, 2024</p>
+      </li>
+      <li>
+        <span class="tag">FEATURED</span>
+        <h2>打印机不出单排查步骤</h2>
+        <p>Mar 18, 2024</p>
+      </li>
+      <li>
+        <span class="tag">FEATURED</span>
+        <h2>在没有网络的情况下，使用手机热点登录点单系统</h2>
+        <p>Mar 18, 2024</p>
+      </li>
+      <li>
+        <h2>1 收银端教学 - 安卓版 (POS Training-Android Version)</h2>
+        <p>Mar 13, 2024</p>
+      </li>
+      <li>
+        <h2>2 收银端教学 - 会员功能</h2>
+        <p>Mar 13, 2024</p>
+      </li>
+      <li>
+        <h2>3 AdaPay EFTPOS</h2>
+        <p>Mar 13, 2024</p>
+      </li>
+      <li>
+        <h2>4 后台教学 - 中文</h2>
+        <p>Mar 11, 2024</p>
+      </li>
+      <li>
+        <h2>在收银主机绑定打印机</h2>
+        <p>Mar 10, 2024</p>
+      </li>
+    </ul>
+  </section>
+
+  <!-- 分页按钮 -->
+  <div class="pagination">
+    <button class="next-page-btn" onclick="nextPage()">Next Page &rarr;</button>
+  </div>
+</main>
+
+<footer>
+  <p>&copy; 2024 Intelligeneer BUG BS 🤔 | Powered by Hugo | Theme: Paper</p>
+</footer>
+</body>
+</html>
