@@ -29,6 +29,14 @@
     font-size: 1em;
 }
 
+.content-detail ol {
+    margin: 15px 0; /* 设置上下间距 */
+    color: #333333; /* 文本颜色 */
+    font-size: 1em; /* 字体大小 */
+    padding-left: 20px; /* 左边距 */
+}
+
+
 .content-detail a {
     color: #D4AF37; /* 金黄色链接 */
     text-decoration: none;
@@ -37,6 +45,8 @@
 .content-detail a:hover {
     text-decoration: underline;
 }
+
+
 
 /* 图片样式 */
 .content-detail img {
