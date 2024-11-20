@@ -87,3 +87,49 @@ footer {
     color: #FFFFFF;
     margin-top: 40px;
 }
+
+/* 响应式布局调整 */
+@media (max-width: 768px) {
+    .content-list {
+        padding: 15px; /* 减小内容内边距 */
+        max-width: 100%; /* 全屏宽度 */
+    }
+
+    .content-list h1 {
+        font-size: 1.5em; /* 缩小标题 */
+    }
+
+    .content-items li {
+        padding: 15px; /* 减少卡片内边距 */
+        font-size: 0.9em; /* 缩小字体 */
+    }
+
+    .tag {
+        font-size: 0.7em; /* 调整标签文字大小 */
+        padding: 4px 8px; /* 减少标签边距 */
+    }
+
+    .next-page-btn {
+        padding: 8px 15px; /* 调整按钮大小 */
+        font-size: 0.9em; /* 缩小按钮文字 */
+    }
+}
+
+@media (max-width: 480px) {
+    .content-list h1 {
+        font-size: 1.2em; /* 更小屏幕的标题大小 */
+    }
+
+    .content-items p {
+        font-size: 0.8em; /* 缩小段落文字 */
+    }
+
+    .tag {
+        font-size: 0.6em; /* 更小屏幕的标签文字 */
+    }
+
+    .next-page-btn {
+        padding: 6px 12px; /* 缩小按钮内边距 */
+        font-size: 0.8em; /* 缩小文字大小 */
+    }
+}

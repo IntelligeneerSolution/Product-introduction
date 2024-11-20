@@ -9,8 +9,23 @@
     margin-bottom: 30px;
 }
 
+.lang-switch {
+    background-color: #ffdd55; /* 金黄色背景 */
+    color: #000000;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: large;
+    width: 100px;
+    height: 50px;
+    box-sizing: border-box;
+    border-radius: 5px; /* 添加圆角使按钮更美观 */
+    transition: background-color 0.3s ease; /* 添加颜色过渡效果 */
+}
+
 .lang-switch:hover {
-    background-color: #F0C674;
+    background-color: #F0C674; /* 悬停时稍微变亮，给用户视觉反馈 */
 }
 
 /* 主要内容部分 */
@@ -66,4 +81,47 @@ footer {
     background-color: #333333;
     color: #FFFFFF;
     margin-top: 40px;
+}
+
+/* 响应式布局调整 */
+@media (max-width: 768px) {
+    .index-navbar {
+        flex-direction: column; /* 改为纵向排列 */
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .lang-switch {
+        width: 80px; /* 减小宽度 */
+        height: 40px; /* 减小高度 */
+        font-size: medium; /* 调整文字大小 */
+        margin: 5px 0; /* 增加间距 */
+    }
+
+    .content-list {
+        padding: 10px; /* 减小内边距 */
+        max-width: 100%; /* 占满屏幕宽度 */
+    }
+
+    .content-list h1 {
+        font-size: 1.5em; /* 调整标题大小 */
+    }
+
+    .content-items li {
+        padding: 15px; /* 减少卡片内边距 */
+    }
+}
+
+@media (max-width: 480px) {
+    .content-list h1 {
+        font-size: 1.2em; /* 再次缩小标题 */
+    }
+
+    .content-items p {
+        font-size: 0.9em; /* 缩小段落文字 */
+    }
+
+    .lang-switch {
+        font-size: small; /* 更小的文字尺寸 */
+    }
 }

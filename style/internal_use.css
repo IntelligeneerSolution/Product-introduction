@@ -47,7 +47,7 @@
 /* 标签样式 */
 .tag {
     display: inline-block;
-    background-color: #ff8888; /* 金黄色标签 */
+    background-color: #ff8888; /* 标签背景色 */
     color: #FFFFFF;
     font-weight: bold;
     font-size: 0.8em;
@@ -63,4 +63,40 @@ footer {
     background-color: #333333;
     color: #FFFFFF;
     margin-top: 40px;
+}
+
+/* 响应式布局调整 */
+@media (max-width: 768px) {
+    .content-list {
+        padding: 15px; /* 减少内容边距 */
+        max-width: 100%; /* 占满屏幕宽度 */
+    }
+
+    .content-list h1 {
+        font-size: 1.5em; /* 调整标题大小 */
+    }
+
+    .content-items li {
+        padding: 15px; /* 减少卡片内边距 */
+        font-size: 0.9em; /* 缩小文字大小 */
+    }
+
+    .tag {
+        font-size: 0.7em; /* 缩小标签文字 */
+        padding: 4px 8px; /* 缩小标签边距 */
+    }
+}
+
+@media (max-width: 480px) {
+    .content-list h1 {
+        font-size: 1.2em; /* 再次缩小标题大小 */
+    }
+
+    .content-items p {
+        font-size: 0.8em; /* 缩小段落文字 */
+    }
+
+    .tag {
+        font-size: 0.6em; /* 更小屏幕的标签文字 */
+    }
 }
