@@ -85,48 +85,62 @@ footer {
 
 /* 响应式布局调整 */
 @media (max-width: 768px) {
-    .index-navbar {
-        flex-direction: column; /* 改为纵向排列 */
-        margin-top: 10px;
-        margin-bottom: 20px;
-        flex-wrap: wrap; /* 允许按钮换行 */
-        justify-content: center; /* 按钮居中 */
-        gap: 10px; /* 增加按钮之间的间距 */
+    .header {
+        display: flex;
+        flex-direction: column; /* 垂直排列 logo 和标题 */
+        align-items: center;
+        padding: 15px 0;
     }
 
-    .lang-switch {
-        width: 80px; /* 减小宽度 */
-        height: 40px; /* 减小高度 */
-        font-size: medium; /* 调整文字大小 */
-        margin: 5px 0; /* 增加间距 */
-        flex: 1 1 calc(33.33% - 10px); /* 设置按钮宽度占三分之一屏幕宽度 */
+    .logo {
+        position: static; /* 移除绝对定位，避免覆盖标题 */
+        margin-top: 20px; /* 增加与标题的间距 */
+        margin-bottom: 1px; /* 增加与标题的间距 */
+        height: 50px; /* 缩小 logo 大小 */
+    }
+
+    .header-title {
+        font-size: 1.8em; /* 缩小标题字体大小 */
         text-align: center;
     }
 
-    .content-list {
-        padding: 10px; /* 减小内边距 */
-        max-width: 100%; /* 占满屏幕宽度 */
+    .index-navbar {
+        flex-direction: column; /* 改为纵向布局 */
+        margin: 10px 0;
+        flex-wrap: nowrap; /* 允许换行 */
+        gap: 10px; /* 按钮间距 */
     }
 
-    .content-list h1 {
-        font-size: 1.5em; /* 调整标题大小 */
+    .lang-switch {
+        flex: 1 1 calc(33.33% - 10px);
+        font-size: medium; /* 调整文字大小 */
     }
 
-    .content-items li {
-        padding: 15px; /* 减少卡片内边距 */
+    main {
+        padding: 20px; /* 减少主内容边距 */
+    }
+
+    h1 {
+        font-size: 1.8em; /* 调整主标题大小 */
     }
 }
 
 @media (max-width: 480px) {
-    .content-list h1 {
-        font-size: 1.2em; /* 再次缩小标题 */
-    }
-
-    .content-items p {
-        font-size: 0.9em; /* 缩小段落文字 */
+    .header-title {
+        font-size: 1.8em; /* 进一步调整标题大小 */
     }
 
     .lang-switch {
-        font-size: small; /* 更小的文字尺寸 */
+        font-size: small; /* 调整按钮文字大小 */
+        padding: 8px; /* 减少按钮内边距 */
+    }
+
+    main {
+        padding: 15px; /* 更小屏幕的主内容边距 */
+    }
+
+    h1 {
+        font-size: 1.5em; /* 调整主标题大小 */
     }
 }
+

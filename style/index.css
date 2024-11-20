@@ -45,6 +45,7 @@ body {
     justify-content: center; /* 居中对齐 */
     align-items: center;
     margin-top: 20px;
+    /*gap: 10px; !* 按钮之间的间距 *!*/
 }
 
 .lang-switch {
@@ -91,7 +92,8 @@ footer {
 
     .logo {
         position: static; /* 移除绝对定位，避免覆盖标题 */
-        margin-bottom: 10px; /* 增加与标题的间距 */
+        margin-top: 20px; /* 增加与标题的间距 */
+        margin-bottom: 1px; /* 增加与标题的间距 */
         height: 50px; /* 缩小 logo 大小 */
     }
 
@@ -103,11 +105,12 @@ footer {
     .index-navbar {
         flex-direction: column; /* 改为纵向布局 */
         margin: 10px 0;
+        flex-wrap: nowrap; /* 允许换行 */
+        gap: 10px; /* 按钮间距 */
     }
 
     .lang-switch {
-        width: 80px; /* 调整宽度 */
-        height: 40px; /* 调整高度 */
+        flex: 1 1 calc(33.33% - 10px);
         font-size: medium; /* 调整文字大小 */
     }
 
