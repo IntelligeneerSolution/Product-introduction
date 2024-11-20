@@ -89,6 +89,9 @@ footer {
         flex-direction: column; /* 改为纵向排列 */
         margin-top: 10px;
         margin-bottom: 20px;
+        flex-wrap: wrap; /* 允许按钮换行 */
+        justify-content: center; /* 按钮居中 */
+        gap: 10px; /* 增加按钮之间的间距 */
     }
 
     .lang-switch {
@@ -96,6 +99,8 @@ footer {
         height: 40px; /* 减小高度 */
         font-size: medium; /* 调整文字大小 */
         margin: 5px 0; /* 增加间距 */
+        flex: 1 1 calc(33.33% - 10px); /* 设置按钮宽度占三分之一屏幕宽度 */
+        text-align: center;
     }
 
     .content-list {
