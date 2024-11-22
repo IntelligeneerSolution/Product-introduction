@@ -3,7 +3,7 @@ function checkPassword() {
     const password = prompt("Please enter the password to access Internal Use:\n请输入密码以访问内部使用页面:");
 
     // 设置正确的密码
-    const correctPassword = "intelligeneer123"; // 你可以自定义此密码
+        const correctPassword = "intelligeneer123"; // 你可以自定义此密码
 
     // 检查密码是否正确
     if (password === correctPassword) {

@@ -76,6 +76,18 @@ footer {
     margin-top: 40px;
 }
 
+.temback {
+  background-color: #1e1e1e; /* 终端背景色 */
+  color: #c6c6c6; /* 文本颜色 */
+  font-family: 'Courier New', Courier, monospace; /* 等宽字体 */
+  padding: 15px; /* 内边距 */
+  border-radius: 5px; /* 圆角边框 */
+  border: 1px solid #444; /* 外边框 */
+  white-space: pre-wrap; /* 保留换行和空格 */
+  overflow-x: auto; /* 水平滚动条 */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* 盒子阴影 */
+}
+
 .content-tips {
     color: red; /* 设置文字颜色为红色 */
     font-style: italic; /* 设置文字为斜体 */
