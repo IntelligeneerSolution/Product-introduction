@@ -1,0 +1,49 @@
+  <!DOCTYPE html>
+  <html lang="zh">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intelligeneer Solution - Ruijie安装</title>
+    <!-- 引入公共样式 -->
+      <link rel="stylesheet" href="../../style/index.css">
+      <!-- 引入复用的 eachpage 样式 -->
+      <link rel="stylesheet" href="../../style/eachpage.css">
+      <!-- 引入 JavaScript 文件 -->
+      <script src="../../scripts/index.js" defer></script>
+  </head>
+  <body>
+  <header class="header">
+    <img src="../../../images/logo.jpg" alt="Intelligeneer Solution Logo" class="logo" onclick="window.location.href='https://www.intelligeneer.com/'">
+    <h2 class="header-title">Intelligeneer 内部使用手册</h2>
+  </header>
+
+  <nav class="index-navbar">
+    <button class="lang-switch" onclick="window.location.href='../../index.html'">主页</button>
+    <button class="lang-switch" onclick="window.location.href='../Internal_Use.html'">返回</button>
+  </nav>
+
+  <main>
+    <section class="content-detail">
+      <h1>Ruijie 安装</h1>
+      <p>2024年11月13日 · Charlie</p>
+
+      <p>先插上电源， Ruijie 上的黄色网口 (WAN口/小地球图标) 连接在客人的路由器上LAN口上 (一般是蓝色)</p>
+      <p>Ruijie 剩下的蓝色口(LAN口上) 可以连接在我们POS机上或者打印机上，如果口不够可以增加 Network Switch 来扩展。</p>
+      <img src="../../images/RJ安装/ruijie_step1.png" alt="step1">
+
+      <p>然后打开 Ruijie 手机 APP，并扫描 Ruijie 设备下的 二维码进行设置</p>
+      <img src="../../images/RJ安装/ruijie_step2.png" alt="step2">
+
+      <p>一般我会把 Project Name 和 WiFi Name 填写为商家的店名，
+          如果是连锁店 加地址。 Manager Password 和 WiFi密码同商家店名多加一个数字1</p>
+      <img src="../../images/RJ安装/ruijie_step3.png" alt="step3">
+      <p>在POS机器上，打开 Chrome 浏览器，输入 Ruijie 路由器网段 192.168.110.1，进入后需要重新设置一下，填写信息同上。</p>
+      <p>此时 Ruijie 路由器就已经设置完成，并且POS所有相关的网段都设置成 Ruijie路由器即可</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Intelligeneer | Powered by Charlie </p>
+  </footer>
+  </body>
+  </html>

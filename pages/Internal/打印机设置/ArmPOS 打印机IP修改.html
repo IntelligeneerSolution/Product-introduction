@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Intelligeneer Solution - ArmPOS 打印机IP修改</title>
+  <!-- 引入公共样式 -->
+    <link rel="stylesheet" href="../../../style/index.css">
+    <!-- 引入复用的 eachpage 样式 -->
+    <link rel="stylesheet" href="../../../style/eachpage.css">
+    <!-- 引入 JavaScript 文件 -->
+    <script src="../../../scripts/index.js" defer></script>
+</head>
+<body>
+<header class="header">
+  <img src="../../../images/logo.jpg" alt="Intelligeneer Solution Logo" class="logo" onclick="window.location.href='https://www.intelligeneer.com/'">
+  <h2 class="header-title">Intelligeneer 内部使用手册</h2>
+</header>
+
+<nav class="index-navbar">
+  <button class="lang-switch" onclick="window.location.href='../../../index.html'">主页</button>
+  <button class="lang-switch" onclick="window.location.href='../打印机设置.html'">返回</button>
+</nav>
+
+<main>
+  <section class="content-detail">
+    <h1>ArmPOS 打印机IP修改</h1>
+    <p>2024年11月13日 · Charlie</p>
+
+    <p>请注意：此打印机只能在带有网线口的Windows上设置</p>
+    <a href="https://onedrive.live.com/?cid=8119C2A597679EB1&amp;mid=A0722E84162626D8%21108&amp;
+    mcid=A0722E84162626D8&amp;sd=1&amp;id=8119C2A597679EB1%21158912&amp;parId=8119C2A597679EB1%21130342&amp;
+    o=OneUp" target="_blank" rel="noopener">ArmPos打印机驱动下载链接</a>
+    <p>自检打印机，查看打印机的IP地址 (如 192.168.123.200)</p>
+    <p>现在去到 Windows 电脑的控制面板 (Control Panel)</p>
+    <img src="../../../images/AP打印机/AP_step1.png" alt="step1">
+    <p>点开 查看网络状态和任务 (View network status and tasks)</p>
+    <img src="../../../images/AP打印机/AP_step2.png" alt="step2">
+    <p>点开 更改适配器设置 (Change adapter settings)</p>
+    <img src="../../../images/AP打印机/AP_step3.png" alt="step3">
+    <p>右键 Ethernet —> Properties</p>
+    <img src="../../../images/AP打印机/AP_step4.png" alt="step4">
+    <p>双击 IPV4</p>
+    <img src="../../../images/AP打印机/AP_step5.png" alt="step5">
+    <p>先固定Windows 的IP地址 (如何查看当前电脑IP 地址，CMD 输入 ipconfig)</p>
+    <img src="../../../images/AP打印机/AP_step6.png" alt="step6">
+    <p>然后点开 Advanced</p>
+    <img src="../../../images/AP打印机/AP_step7.png" alt="step7">
+    <p>在下面中添加 打印机网段 如：192.168.123.250，添加完成后点确定</p>
+    <img src="../../../images/AP打印机/AP_step8.png" alt="step8">
+    <p>现在 Windows 电脑就可以和打印机通讯了，接下来只要用修改打印机IP的驱动修改打印机即可</p>
+    <img src="../../../images/AP打印机/AP_step9.png" alt="step9">
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2024 Intelligeneer | Powered by Charlie </p>
+</footer>
+</body>
+</html>

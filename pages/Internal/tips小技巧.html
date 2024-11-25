@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Intelligeneer Solution - 安装需要注意事项</title>
+  <title>Intelligeneer Solution - tips小技巧</title>
   <!-- 引入公共样式 -->
     <link rel="stylesheet" href="../../style/index.css">
     <!-- 引入复用的 eachpage 样式 -->
@@ -24,32 +24,18 @@
 
 <main>
   <section class="content-detail">
-    <h1>安装需要注意事项</h1>
+    <h1>tips小技巧</h1>
     <p>2024年11月13日 · Charlie</p>
 
-    <p>首先连接好商家店内的WiFi (很重要，这一步是用来确定商家店内网段)</p>
-    <p>在 Windows 上，打开 “Commannd” (如下图)</p>
+    <p>1. 网店分类隐藏，只对先支付二维码有效，后支付二维码无法隐藏分类</p>
     <img src="../../images/安装中注意事项图/安装step1.png" alt="step1">
-
-    <p>在 Mac 上，打开 “Terminal” (如下图)</p>
+    <p>2. 确认商家不在售卖此商品时可使用 “启用或禁用”</p>
     <img src="../../images/安装中注意事项图/安装step2.png" alt="step2">
-
-    <p class="temback">输入 ipconfig</p>
-    <p>即可查看到当前 Windows电脑的IP地址。 也能确定商家店内网络的网段 </p>
+    <p>3. 商家想要在后支付二维码隐藏商品，但同时又要在前台看见，可使用 “商品显隐”</p>
     <img src="../../images/安装中注意事项图/安装step3.png" alt="step3">
-
-    <p>在 Mac 上，按住 “Option” + 点击WiFi 图标即可查看到当前 Mac电脑的IP地址。</p>
+    <p>4. 当客人有主副收银，前台主机想要将相同商品拆分做 Split Bill，
+      但是后厨又不想将相同商品拆成两个显示在KDS/厨打上怎么办？ 在前台主机上把这个设置关掉</p>
     <img src="../../images/安装中注意事项图/安装step4.png" alt="step4">
-
-    <p>POS设备，我们尽可能把网段设置在 200 以后 (如：192.168.1.200)。并且我们要确定此网段是否被使用</p>
-    <p>如何检查此网段是否被使用 —> 在 Command 或者 Terminal 中输入</p>
-    <p class="temback">ping 192.168.1.200</p>
-    <p>如果看到有毫秒的显示，就说明此网段被使用了</p>
-    <img src="../../images/安装中注意事项图/安装step5.png" alt="step5">
-
-    <p>如果看到 “Destination host unreachable”，就说明 这个IP 地址并未使用。 也就是可以使用</p>
-    <img src="../../images/安装中注意事项图/安装step6.png" alt="step6">
-    <p>Command 和 Terminal 会持续访问网段，如需暂停 Windows 上 按住 “CTRL + C” ， Mac 上 按住 “control + C”</p>
   </section>
 </main>
 
