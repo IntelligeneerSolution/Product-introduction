@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Intelligeneer Solution - (YB)ADAPAY 支付绑定设置流程</title>
+  <!-- 引入公共样式 -->
+    <link rel="stylesheet" href="../../style/index.css">
+    <!-- 引入复用的 eachpage 样式 -->
+    <link rel="stylesheet" href="../../style/eachpage.css">
+    <!-- 引入 JavaScript 文件 -->
+    <script src="../../scripts/index.js" defer></script>
+</head>
+<body>
+<header class="header">
+  <img src="../../images/logo.jpg" alt="Intelligeneer Solution Logo" class="logo" onclick="window.location.href='https://www.intelligeneer.com/'">
+  <h2 class="header-title">Intelligeneer 内部使用手册</h2>
+</header>
+
+<nav class="index-navbar">
+  <button class="lang-switch" onclick="window.location.href='../../index.html'">主页</button>
+  <button class="lang-switch" onclick="window.location.href='../Internal_Use.html'">返回</button>
+</nav>
+
+<main>
+  <section class="content-detail">
+    <h1>YB - ADAPAY 支付绑定设置流程 </h1>
+    <p>2024年11月13日 · Charlie</p>
+
+    <p>快速通道:
+    <a href="#绑定刷卡机">绑定刷卡机</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="#设置transfer schedule">设置transfer schedule</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="#商户操作须知">商户操作须知</a></p>
+    <p class="subtitle">
+    1. 请客人填写 KYC 申请表格 (<a href="https://1drv.ms/b/s!ArGeZ5elwhmBipFG-J-LO48WO79dhw?e=xQ0ZsW" target="_blank">PTY LTD</a>
+      或 <a href="https://1drv.ms/b/s!ArGeZ5elwhmBipFHNt0zS3nVf1rB8A?e=bt2ow8" target="_blank">TRUST</a>)，
+    获取 Pospal 账号密码，如果是新客户需要 <a href="https://1drv.ms/b/s!ArGeZ5elwhmBirMSxJfa8gcWzjDAdQ?e=dSaU77" target="_blank">创建新的 Pospal 账号</a>。
+    </p>
+    <p>
+      填写 <a href="https://1drv.ms/b/s!ArGeZ5elwhmBipFFtgAxD-l2bfucgQ?e=dSCSFf" target="_blank">Adapay EFPOS Terminal Pack</a>
+      确定客人要选的刷卡机、线上/线下支付，以及surcharge
+    </p>
+    <p class="subtitle">2. 找“晓松”开通进件页面，格式：例如 </p>
+    <img src="../../images/ADAPAY支付绑定设置流程/ADP1.png" alt="step1">
+    <p class="subtitle">
+      3. 在<a href="https://beta28.pospal.cn/account/signin" target="_blank">POSPAL后台</a>
+      登录店铺账号，设置 -> 系统 -> Adyen Onboarding页面。（如果开通进件页面成功后依然看不到该页面，复制网址：
+      https://beta28.pospal.cn/Adyen/Onboarding
+    </p>
+    <p>即可进入该账号的Adyen Onboarding页面 </p>
+    <p class="subtitle">4. 点击 ”Create Entity” 检查并填写客户信息【注意：Legal name / country / state / city / postcode /
+      address要填写正确的商家信息，email&第一个phone number留公司的即可，下面一个电话留商家的，注意电话号码格式，其他不用改动】。
+    </p>
+    <img src="../../images/ADAPAY支付绑定设置流程/ADP2.png" alt="step2">
+    <p class="subtitle">
+         5. 成功后，点击 “Adyen Verification” 按照客户填好的KYC申请表格填写Adyen申请表并上传所需附件。“Update”仅可以更新商家地址。
+    </p>
+    <img src="../../images/ADAPAY支付绑定设置流程/ADP3.png" alt="step3">
+    <p class="subtitle">6. 在ADYEN后台 Account Holders 查看申请进度，PTY LTD通常在第二天可以通过，Trust账户需要多次查看更新。 </p>
+    <img src="../../images/ADAPAY支付绑定设置流程/ADP4.png" alt="step4">
+    <p class="highlight">注意：Status 显示 Active, Payout 显示 Allowed，则表示该账户成功开通。 如果没有成功，查看KYC Timeline，根据要求检查更改信息。 </p>
+    <p class="subtitle">7. Account申请成功后，根据与客人协商的费率，找“晓松”设置surcharge和分账：例如 </p>
+    <img src="../../images/ADAPAY支付绑定设置流程/ADP5.png" alt="step5">
+    <p class="highlight">注意：线上surcharge需要我们进入客人POSPAL账户后台，在【设置】-【支付方式】- 【ADYEN ONLINE】设置。 </p>
+    <p class="subtitle">8. 继续找“晓松”设置支付方式：例如 </p>
+    <img src="../../images/ADAPAY支付绑定设置流程/ADP6.png" alt="step6">
+    <p class="subtitle" id="绑定刷卡机">9. 配置好后需要查看刷卡机的SN（刷卡机背面），在ADYEN后台把它绑定到店铺。</p>
+    <img src="../../images/ADAPAY支付绑定设置流程/ADP7.png" alt="step7">
+    <p class="highlight">核对刷卡机型号和SN， 点击右边More options，选择Reassign. </p>
+    <img src="../../images/ADAPAY支付绑定设置流程/ADP8.png" alt="step8">
+    <img src="../../images/ADAPAY支付绑定设置流程/ADP9.png" alt="step9">
+    <img src="../../images/ADAPAY支付绑定设置流程/ADP10.png" alt="step10">
+    <p>从POSPAL-> Adyen Onboarding页面复制Store ID，粘贴到上面的输入框即可。</p>
+    <img src="../../images/ADAPAY支付绑定设置流程/ADP11.png" alt="step11">
+    <p class="subtitle">10. 刷卡机可根据客人设置（CA-live后台Terminals）：</p>
+    <img src="../../images/ADAPAY支付绑定设置流程/ADP12.png" alt="step12">
+    <p>Customization: 记录该terminal绑定的商家名称。如果有多台刷卡机，记录为相应名称，比如Miss Chilli Counter，便于后期查询。</p>
+    <p>如果商家想要把自己的logo放在刷卡机主界面，可以在Logo这里上传。注意：不同型号的刷卡机，使用的桌面尺寸不同，可以调整到最合适的程度。 </p>
+    <img src="../../images/ADAPAY支付绑定设置流程/ADP13.png" alt="step13">
+    <p>Payment features: Transaction & MKE Limits下可以设置刷卡机限制刷卡金额，比如上图，该刷卡机最低刷卡金额为$10。</p>
+    <img src="../../images/ADAPAY支付绑定设置流程/ADP14.png" alt="step14">
+    <img src="../../images/ADAPAY支付绑定设置流程/ADP15.png" alt="step15">
+    <p>Receipts: 设置刷卡机小票。以及设置小票内容：商户名称以及地址，可以加ABN. </p>
+    <img src="../../images/ADAPAY支付绑定设置流程/ADP16.png" alt="step16">
+    <p>Integrations: 设置standalone</p>
+    <img src="../../images/ADAPAY支付绑定设置流程/ADP17.png" alt="step17">
+    <p>Passcodes: 更改passcodes，或者设置refund passcode。 </p>
+    <img src="../../images/ADAPAY支付绑定设置流程/ADP18.png" alt="step18">
+    <p>Terminal timeline: 可以看到这台刷卡机自订购发货后的所有操作以及升级记录。</p>
+    <img src="../../images/ADAPAY支付绑定设置流程/ADP19.png" alt="step19">
+    <p class="subtitle" id="设置transfer schedule">11. 在BalancePlatform后台设置该账户的Transfer Schedule</p>
+    <img src="../../images/ADAPAY支付绑定设置流程/ADP20.png" alt="step20">
+    <img src="../../images/ADAPAY支付绑定设置流程/ADP21.png" alt="step21">
+    <img src="../../images/ADAPAY支付绑定设置流程/ADP22.png" alt="step22">
+    <img src="../../images/ADAPAY支付绑定设置流程/ADP23.png" alt="step23">
+    <img src="../../images/ADAPAY支付绑定设置流程/ADP24.png" alt="step24">
+    <p class="highlight">注意：如果想要设置更复杂的时间，可以在Google中搜索 Cron Expression Generator 进行预设，之后copy过来即可。 </p>
+    <img src="../../images/ADAPAY支付绑定设置流程/ADP25.png" alt="step25">
+    <p class="highlight">保存后再检查一下时区，确保是 (Australia/Sydney) 即可。</p>
+    <p class="subtitle" id="商户操作须知">12. 刷卡机端版本更新【客人须知】： </p>
+    <p>V400c Plus – 9+确认（或者界面上的setting图标）configuration -> 0974 -> update</p>
+    <p>S1F2/AMS1 – Setting图标-> configuration -> 0974 -> update </p>
+    <p>确保刷卡机上的版本升级至与后台版本一致。 </p>
+    <p class="subtitle">13. 历史记录查询【客人须知】： </p>
+    <p>V400c Plus – 8+确认（或者界面上的transaction图标）-> history -> 4346 （初始密码）查看每笔转账；</p>
+    <p>S1F2/AMS1 – Setting图标 -> history -> 4346（初始密码） 查看每笔转账 </p>
+    <p class="subtitle">14. 每日结算【客人须知】： </p>
+    <div class="icon-group">
+      <p class="icon-item">
+          打印 icon:
+          <img src="../../images/ADAPAY支付绑定设置流程/icon/icon1.png" alt="打印图标" width="40" height="40">
+      </p>
+      <p class="icon-item">
+          reset icon:
+          <img src="../../images/ADAPAY支付绑定设置流程/icon/icon2.png" alt="重置图标" width="40" height="40">
+      </p>
+    </div>
+
+    <p>V400c Plus – 8+确认（或者界面上的transaction图标）-> total -> 4346 （初始密码）查看当天日结单，点击打印日结单；
+      Reset -> Yes 即可重置归零。或者在total界面点击 Reset重置归零。 </p>
+    <p>S1F2/AMS1 – Setting图标 -> history -> 4346（初始密码） 查看当天日结单，点击图片包含 游戏机, 物体, 桌子
+      描述已自动生成打印日结单；Reset -> Yes 即可重置归零。或者在total界面点击 Reset重置归零。 </p>
+    <p class="subtitle">15. 退款Refund【客人须知】 </p>
+    <p>在Pospal主机的销售单据Sales Report中进行退款即可。</p>
+    <p>Standalone模式商户：在刷卡机上，点进该笔交易，点击左下角进行退款。右下角图片包含 游戏机, 物体, 桌子
+      描述已自动生成打印该交易小票。 </p>
+    <p class="subtitle">16. 如果WiFi无法连接【客人须知】： </p>
+    <p>V400c Plus – 9+确认（或者界面上的setting图标）Network -> 0974 -> 可选择Bluetooth或者Ethernet（插网线）.</p>
+    <p>S1F2/AMS1 – Setting图标 -> Network -> 0974 -> 选择Cellular或者Bluetooth。 </p>
+    <img src="../../images/ADAPAY支付绑定设置流程/ADP26.png" alt="step26">
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2024 Intelligeneer | Powered by Charlie </p>
+</footer>
+</body>
+</html>

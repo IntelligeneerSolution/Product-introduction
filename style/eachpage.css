@@ -11,6 +11,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+
 .content-detail h1 {
     color: #011E41; /* 深蓝色标题 */
     font-size: 2em;
@@ -87,6 +88,57 @@ footer {
   overflow-x: auto; /* 水平滚动条 */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* 盒子阴影 */
 }
+
+.content-detail p.highlight {
+    /*background-color: #00FF00; !* 高亮绿色背景 *!*/
+    color: red; /* 黑色字体 */
+    font-weight: bold; /* 加粗字体 */
+    font-style: italic; /* 设置文字为斜体 */
+}
+
+.content-detail p.inst{
+    display: flex;
+    flex-direction: column; /* 垂直排列图标和文字 */
+    align-items: center; /* 居中对齐 */
+    justify-content: center; /* 上下居中 */
+    margin: 20px 0; /* 上下间距 */
+}
+/* 外层容器 */
+.content-detail div.icon-group {
+    display: flex; /* 横向排列子元素 */
+    justify-content: flex-start; /* 水平靠左对齐 */
+    align-items: flex-start; /* 顶部对齐 */
+    gap: 10px; /* 每个图标组之间的间距 */
+}
+
+/* 每个图标组 */
+.content-detail p.icon-item {
+    display: flex;
+    flex-direction: column; /* 垂直排列文本和图标 */
+    align-items: center; /* 居中对齐 */
+    text-align: center; /* 文本居中 */
+    width: 20%;
+}
+
+.content-detail p.icon-item img {
+    width: 20%; /* 图标宽度 */
+    height: 20%; /* 图标高度 */
+    margin-top: 2px; /* 文本与图标间距 */
+}
+
+/* 通用小标题样式 */
+.content-detail p.subtitle {
+    font-size: 1.1em; /* 调整字体大小 */
+    font-weight: bold; /* 加粗 */
+    color: #011E41; /* 深蓝色文字 */
+    margin: 15px 0; /* 设置上下间距 */
+    padding: 5px 0; /* 设置内边距 */
+    border-left: 4px solid #D4AF37; /* 左侧金黄色边框 */
+    text-indent: 0; /* 去除段落缩进 */
+    background-color: #f9f9f9; /* 浅灰色背景 */
+    border-radius: 4px; /* 可选：让背景圆角 */
+}
+
 
 .content-tips {
     color: red; /* 设置文字颜色为红色 */
