@@ -8,7 +8,7 @@ function checkPassword() {
     // 检查密码是否正确
     if (password === correctPassword) {
         // 如果密码正确，跳转到 Internal_Use.html 页面
-        window.location.href = '../YB-introduction/pages/Internal_Use.html';
+        window.location.href = '/pages/Internal_Use.html';
     } else if (password !== null) {
         // 如果密码不正确且用户输入了内容，则提示错误信息
         alert("Incorrect password. Please try again.");
